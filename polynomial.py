@@ -67,7 +67,7 @@ class Add:
         # 3 + 5 -> 8 (when both are Int)
         if isinstance(simplified_p1, Int) and isinstance(simplified_p2, Int):
             return Int(simplified_p1.i + simplified_p2.i)
-        
+
         # If no simplification applies, return new Add with simplified operands
         return Add(simplified_p1, simplified_p2)
 
@@ -115,7 +115,7 @@ class Mul:
         # 3 * 5 -> 15 (when both are Int)
         if isinstance(simplified_p1, Int) and isinstance(simplified_p2, Int):
             return Int(simplified_p1.i * simplified_p2.i)
-        
+
         # If no simplification applies, return new Mul with simplified operands
         return Mul(simplified_p1, simplified_p2)
 
@@ -159,7 +159,7 @@ class Sub:
         # 5 - 3 -> 2 (when both are Int)
         if isinstance(simplified_p1, Int) and isinstance(simplified_p2, Int):
             return Int(simplified_p1.i - simplified_p2.i)
-        
+
         # If no simplification applies, return new Sub with simplified operands
         return Sub(simplified_p1, simplified_p2)
 
@@ -203,7 +203,7 @@ class Div:
         # 6 / 2 -> 3 (when both are Int)
         if isinstance(simplified_p1, Int) and isinstance(simplified_p2, Int):
             return Int(simplified_p1.i // simplified_p2.i)
-        
+
         # If no simplification applies, return new Div with simplified operands
         return Div(simplified_p1, simplified_p2)
 
