@@ -208,7 +208,7 @@ class Div:
         return Div(simplified_p1, simplified_p2)
 
 
-# Original polynomial example
+# Original polynomial example  
 poly = Add(Add(Int(4), Int(3)), Add(X(), Mul(Int(1), Add(Mul(X(), X()), Int(1)))))
 print("Original polynomial:", poly)
 
